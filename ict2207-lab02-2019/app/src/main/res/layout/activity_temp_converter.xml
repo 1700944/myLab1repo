@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- TODO implement the UI here... -->
+
+    <EditText
+        android:id="@+id/editTextTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Temperature Here"
+        android:inputType="textPersonName|numberDecimal" />
+
+    <RadioGroup
+        android:id="@+id/radiodeggroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RadioButton
+        android:id="@+id/fahrenheit_rb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="To Fahrenheit" />
+
+    <RadioButton
+        android:id="@+id/celsius_rb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To Celsius" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/convert_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="convertTemperature"
+        android:text="Convert" />
+
+    <Button
+        android:id="@+id/clear_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear" />
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false" />
+</LinearLayout>
